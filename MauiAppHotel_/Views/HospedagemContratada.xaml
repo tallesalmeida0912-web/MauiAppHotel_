@@ -4,13 +4,82 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MauiAppHotel_.Views.HospedagemContratada"
-    Title="HospedagemContratada">
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="{StaticResource Gray200}">
+   
 
-    <VerticalStackLayout>
-        <Label
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
+    <VerticalStackLayout VerticalOptions="Center">
+
+        <Label Text="Suíte super luxo" 
+               TextColor="{StaticResource MidnightBlue }"
+               FontFamily="kalam-regular"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Border Padding="10"
+                Margin="10"
+                BackgroundColor="White"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 5" >
+            
+            <HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="Adultos:" />
+                    <Label Text="2" 
+                          TextColor="{StaticResource MidnightBlue}" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="Crianças:" />
+                    <Label Text="1"
+                                   TextColor="{StaticResource MidnightBlue}" />
+                </HorizontalStackLayout>
+
+            </HorizontalStackLayout>
+        </Border >
+
+        <Border Padding="10"
+                Margin="10"
+                BackgroundColor="White"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 5">
+
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2026" />
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2026" />
+                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+            </Grid>
+
+        </Border>
+
+        <Border Padding="10"
+                Margin="10"
+                BackgroundColor="White"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 5">
+
+            <HorizontalStackLayout>
+                <Label Text="Valor Total"/>
+                <Label Text="R$750,00" />
+                
+            </HorizontalStackLayout>
+            
+        </Border>
+
+        <Button Text="Voltar" 
+                BackgroundColor="MidnightBlue"
+                HorizontalOptions="Center"
+                Clicked="Clicked_Button"/>
+
     </VerticalStackLayout>
-
+    
 </ContentPage>
