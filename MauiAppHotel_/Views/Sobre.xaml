@@ -8,6 +8,7 @@
     NavigationPage.HasNavigationBar="False"
     BackgroundColor="{StaticResource Gray200}">
 
+    
     <VerticalStackLayout
         Padding="25"
         Spacing="20"
@@ -21,9 +22,17 @@
             HorizontalOptions="Center" />
 
         <Border
-            Padding="20"
-            Stroke="{StaticResource OffBlack}"
+            Padding="1"
+            Stroke="#193653"
+            StrokeThickness="1"
             StrokeShape="RoundRectangle 15">
+            <Border
+            Padding="20"
+            StrokeShape="RoundRectangle 15"
+            BackgroundColor="White"
+            Stroke="#DDDDDD"
+            StrokeThickness="1"
+            >
 
             <VerticalStackLayout Spacing="15">
 
@@ -32,7 +41,7 @@
                     FontSize="25"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
-                    TextColor="{StaticResource MidnightBlue}" />
+                    TextColor="#193653" />
 
                 <Label
                     Text="Aplicativo desenvolvido para facilitar a contratação e organização de hospedagens."
@@ -55,11 +64,11 @@
             </VerticalStackLayout>
 
         </Border>
-
+        </Border>
         <Button
             Text="Voltar"
             Clicked="OnVoltarClicked"
-            BackgroundColor="MidnightBlue"/>
+            BackgroundColor="#193653"/>
 
     </VerticalStackLayout>
 

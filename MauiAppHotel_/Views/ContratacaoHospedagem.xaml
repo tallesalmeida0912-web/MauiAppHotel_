@@ -14,7 +14,7 @@
             Text="Cálculo da Díaria"
             FontFamily="kalam-regular"
             FontSize="50"
-            TextColor="{StaticResource MidnightBlue}"
+            TextColor="#193653"
             />
         <Border Padding="10"
                 Margin="10"
@@ -87,12 +87,15 @@
                 </Border>
 
                 <Button Text="Avançar" Clicked="Button_Clicked"
-                        BackgroundColor="MidnightBlue"/>
+                        BackgroundColor="#193653"/>
 
                 <Button
-                    Text="Sobre o aplicativo"
+                    Text="ⓘSobre o aplicativo"
+                    TextColor="#193653"
                     Clicked="OnSobreClicked"
-                    BackgroundColor="MidnightBlue"
+                    BackgroundColor="Transparent"
+                    BorderColor="#193653"
+                    BorderWidth="1"
                     Margin="0,30,0,0" /> 
 
             </VerticalStackLayout>

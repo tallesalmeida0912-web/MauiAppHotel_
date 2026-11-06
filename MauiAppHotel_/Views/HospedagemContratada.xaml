@@ -28,13 +28,13 @@
                 <HorizontalStackLayout>
                     <Label Text="Adultos:" />
                     <Label Text="2" 
-                          TextColor="{StaticResource MidnightBlue}" />
+                          TextColor="#193653" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
                     <Label Text="Crianças:" />
                     <Label Text="1"
-                                   TextColor="{StaticResource MidnightBlue}" />
+                                   TextColor="#193653" />
                 </HorizontalStackLayout>
 
             </HorizontalStackLayout>
@@ -75,10 +75,16 @@
             
         </Border>
 
+        <Border Padding="1"
+                Margin="25">
+            
+        
         <Button Text="Voltar" 
-                BackgroundColor="MidnightBlue"
-                HorizontalOptions="Center"
-                Clicked="Clicked_Button"/>
+                BackgroundColor="#193653"
+                
+                Clicked="Clicked_Button"
+                Margin="0, 150, 0, 0"/>
+        </Border>
 
     </VerticalStackLayout>
     
